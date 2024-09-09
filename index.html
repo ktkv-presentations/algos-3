@@ -20,70 +20,69 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
+
 				<section>
-					<h1>
-						Beautiful presentations
-					</h1>
-					<h2>New features</h2>
+					<h1>Жизненный цикл программы</h1>
+					<img data-type="qrcode" class="r-stretch" alt="https://ktkv-presentations.github.io/algos-3/">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Жизненный цикл программы </h2>
+					<h5>Software Development Life Cycle (SDLC)</h5>
+					<p>последовательность этапов, которые проходит программное обеспечение с момента идеи до его завершения,
+						включая
+						проектирование, разработку, тестирование, внедрение и сопровождение</p>
+				</section>
+				<section>
+					<h2>Этапы разработки</h2>
 					<ul>
-						<li>Awesome icons <i class="fa-solid fa-check"></i></li>
-						<li><code class="js">(inline) => code("highlighting")</code></li>
-						<li>Automatic QR Code generation</li>
-						<li>and much more!</li>
+						<li class="fragment"><code class="plaintext">Анализ требований</code> - что именно должно делать ПО</li>
+						<li class="fragment"><code class="plaintext">Проектирование</code> - создаёт структуру и архитектуру системы</li>
+						<li class="fragment"><code class="plaintext">Разработка</code> - обеспечивает реализацию требований</li>
+						<li class="fragment"><code class="plaintext">Тестирование</code> - гарантирует, что программа будет работать корректно</li>
+						<li class="fragment"><code class="plaintext">Сопровождения</code> - обеспечивается долговечность и актуальность программного обеспечения
+						</li>
 					</ul>
 				</section>
-			</section>
-			<section>
-				<h1>
-					Custom TokyoNight theme
-				</h1>
-				<h2 class="fragment">That has</h2>
-				<h3 class="fragment">Multi</h3>
-				<h4 class="fragment">Level</h4>
-				<h5 class="fragment">Heading</h5>
-				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"><i
-							class="fa-brands fa-github"></i></a> for the colorscheme!</h6>
-			</section>
-			<section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<p>
-						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
-					</p>
-					<pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
+				<section>
+					<h2>Модели жизненного цикла разработки</h2>
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+						<div>
+							<div>Водопадная модель</div>
+							<h5>Waterfall</h5>
+							<p>каждый этап выполняется один за другим</p>
+						</div>
+						<div>
+							<div>Спиральная модель</div>
+							<h5>Spiral</h5>
+							<p>одни и те же этапы, но с постепенным уточнением требований и улучшением продукта</p>
+						</div>
+						<div>
+							<div>V-модель</div>
+							<p>каждый этап разработки связан с соответствующим этапом тестирования</p>
+						</div>
+						<div>
+							<div>Agile</div>
+							<h5>Scrum, Kanban</h5>
+							<p>Этапы разработки проходят параллельно в нескольких коротких итерациях (спринтах)</p>
+						</div>
+					</div>
 				</section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<h5>Inline code highlighting is now also supported!</h5>
-					<p>
-						Just wrap your code with <code>&lt;code&gt;</code> tag and get
-						highlighting like this <code class="js">const foo = () => {return bar}</code>!
-					</p>
+				<section>
+					<img class="r-stretch"
+						src="https://cdn.prod.website-files.com/5e7b70db46c7ed4f6dc8b2e9/6282623d4ef7ea1b2ece334d_sprint_planning_vs_sprint_review_tony_stark.png"
+						alt="">
 				</section>
-			</section>
-			<section>
-				<h1>Now supports Awesome Icons!</h1>
-				<p>Awesome project that provides awesome icons with classes!</p>
-				<h6>Checkout their github for icons like this <a href="https://github.com/FortAwesome/Font-Awesome"><i
-							class="fa-brands fa-github"></i></a>!
-				</h6>
-			</section>
-			<section>
-				<h1>Now supports automatic QRCode generation!</h1>
-				<p>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" /&gt;</code> tag!</p>
-				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
-				</h6>
-			</section>
-			<section>
-				<h1>New changes on the way!</h1>
+				<section>
+					<h2>Выбор подходящей модели жизненного цикла</h2>
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr); row-gap: 1em;">
+						<div class="fragment">Характер проекта</div>
+						<div class="fragment">Риски</div>
+						<div class="fragment">Размер команды</div>
+						<div class="fragment">Критичность ПО</div>
+					</div>
+				</section>
 			</section>
 		</div>
 	</div>
