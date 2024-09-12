@@ -13,7 +13,7 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/tokyo-night.css">
-	<script src="https://kit.fontawesome.com/fdcdb1126b.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -36,34 +36,37 @@
 				</section>
 				<section>
 					<h2>Этапы разработки</h2>
-					<ul>
+					<ul class="flex flex-col gap-4">
 						<li class="fragment"><code class="plaintext">Анализ требований</code> - что именно должно делать ПО</li>
-						<li class="fragment"><code class="plaintext">Проектирование</code> - создаёт структуру и архитектуру системы</li>
+						<li class="fragment"><code class="plaintext">Проектирование</code> - создаёт структуру и архитектуру системы
+						</li>
 						<li class="fragment"><code class="plaintext">Разработка</code> - обеспечивает реализацию требований</li>
-						<li class="fragment"><code class="plaintext">Тестирование</code> - гарантирует, что программа будет работать корректно</li>
-						<li class="fragment"><code class="plaintext">Сопровождения</code> - обеспечивается долговечность и актуальность программного обеспечения
+						<li class="fragment"><code class="plaintext">Тестирование</code> - гарантирует, что программа будет работать
+							корректно</li>
+						<li class="fragment"><code class="plaintext">Сопровождения</code> - обеспечивается долговечность и
+							актуальность программного обеспечения
 						</li>
 					</ul>
 				</section>
 				<section>
 					<h2>Модели жизненного цикла разработки</h2>
-					<div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+					<div class="grid grid-cols-2 gap-8">
 						<div>
-							<div>Водопадная модель</div>
+							<h4>Водопадная модель</h4>
 							<h5>Waterfall</h5>
 							<p>каждый этап выполняется один за другим</p>
 						</div>
 						<div>
-							<div>Спиральная модель</div>
+							<h4>Спиральная модель</h4>
 							<h5>Spiral</h5>
 							<p>одни и те же этапы, но с постепенным уточнением требований и улучшением продукта</p>
 						</div>
 						<div>
-							<div>V-модель</div>
+							<h4>V-модель</h4>
 							<p>каждый этап разработки связан с соответствующим этапом тестирования</p>
 						</div>
 						<div>
-							<div>Agile</div>
+							<h4>Agile</h4>
 							<h5>Scrum, Kanban</h5>
 							<p>Этапы разработки проходят параллельно в нескольких коротких итерациях (спринтах)</p>
 						</div>
@@ -76,14 +79,109 @@
 				</section>
 				<section>
 					<h2>Выбор подходящей модели жизненного цикла</h2>
-					<div style="display: grid; grid-template-columns: repeat(2, 1fr); row-gap: 1em;">
-						<div class="fragment">Характер проекта</div>
-						<div class="fragment">Риски</div>
-						<div class="fragment">Размер команды</div>
-						<div class="fragment">Критичность ПО</div>
+					<div class="grid grid-cols-2 gap-8">
+						<div class="fragment border">
+							<h4>Характер проекта</h4>
+							<div>Сложные - waterfall <br>Динамичные - agile</div>
+						</div>
+
+						<div class="fragment border">
+							<h4>Риски</h4>
+							<div>Спиральная для неопределенности и рисков</div>
+						</div>
+						<div class="fragment border">
+							<h4>Размер команды</h4>
+							<div>Для небольших команд - agile</div>
+						</div>
+						<div class="fragment border">
+							<h4>Критичность ПО</h4>
+							<div>Высоконадежное ПО - V-модель</div>
+						</div>
 					</div>
 				</section>
 			</section>
+			<section>
+				<section>
+					<h1>Программный продукт</h1>
+					<p>комплекс программных средств, созданных для решения конкретных задач пользователей</p>
+					<h6>ПО готовое для обычных пользователей</h6>
+				</section>
+				<section>
+					<h1>Этапы до ПП</h1>
+					<div class="grid grid-cols-2 gap-8">
+						<div>
+							<h4>Прототип</h4>
+							<p>первоначальная версия программы, созданная для демонстрации основных функций и интерфейса</p>
+						</div>
+						<div>
+							<h4>Демонстрационная версия</h4>
+							<p>ограниченная по функциональности или времени использования версия программного продукта,
+								предназначенная для ознакомления пользователей с программой перед покупкой</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Жизненный цикл программного продукта</h1>
+					<ol class="flex flex-col gap-4">
+						<li><code class="plaintext">Создание</code> - разработка программного продукта, анализа требований и
+							внедрение</li>
+						<li><code class="plaintext">Создание</code> - использование продукта, его сопровождение, обновление и
+							поддержка</li>
+						<li><code class="plaintext">Создание</code> - исправление ошибок, новые функции и поддержание совместимости
+						</li>
+						<li><code class="plaintext">Создание</code> - заменен новым решением, если требования изменились и устарело
+						</li>
+					</ol>
+				</section>
+				<section>
+					<h1>Характеристики ПО</h1>
+					<ul class="grid grid-cols-3 gap-4">
+						<li class="col-span-2">Функциональность</li>
+						<li>Надежность</li>
+						<li>Эффективность</li>
+						<li class="col-start-3">Безопасность</li>
+						<li class="col-span-2">Удобство использования</li>
+						<li>Совместимость</li>
+						<li class="col-span-3">Поддерживаемость и сопровождаемость</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h1>Этапы разработки программы</h1>
+					<h2>1.1. Анализ требований</h2>
+					<p>собираются, уточняются и документируются требования к продукту</p>
+				</section>
+				<section data-auto-animate>
+					<h1>Этапы разработки программы</h1>
+					<h2>1.2. Этап проектирования</h2>
+					<p>разрабатывается структура будущей программы, определяется её архитектура и интерфейсы, а также способы
+						взаимодействия её компонентов</p>
+				</section>
+				<section data-auto-animate>
+					<h1>Этапы разработки программы</h1>
+					<h2>1.3. Написание кода</h2>
+					<div>
+						<ul>
+							<li>
+								<div class="plaintext">Переход от проектирования к реализации</div>
+							</li>
+							<li>
+								<div class="plaintext">Применение принципов разработки качественного кода</div>
+								<div class="grid grid-cols-3 gap-4">
+									<code class="plaintext">SOLID</code><code class="plaintext">KISS (Keep it simple, stupid)</code><code
+										class="plaintext">DRY (Don’t Repeat Yourself)</code>
+								</div>
+							</li>
+							<li>
+								<div class="plaintext">Переход от проектирования к реализации</div>
+							</li>
+							<li>
+								<div class="plaintext">Переход от проектирования к реализации</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+
 		</div>
 	</div>
 
@@ -92,6 +190,14 @@
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
 	<script src="plugin/qrcode/qrcode.js"></script>
+	<script>
+		tailwind.config = {
+			corePlugins: {
+				preflight: false,
+			},
+			important: true,
+		}
+	</script>
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
